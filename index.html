@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professionelle Buchhaltungsdienstleistungen für Ihr Unternehmen.">
+    <title>Berkan Scambiato Buchhaltungs-Manufaktur - Startseite</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Willkommen bei der Berkan Scambiato Buchhaltungs-Manufaktur</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Startseite</a></li>
+                <li><a href="#about" onclick="showSection('about')">Über uns</a></li>
+                <li><a href="#services" onclick="showSection('services')">Dienstleistungen</a></li>
+                <li><a href="#partnership" onclick="showSection('partnership')">Partnerprogramm</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Startseite -->
+    <section id="home" class="content-section">
+        <h2>Professionelle Buchhaltungsdienstleistungen für Unternehmen</h2>
+        <p>Die Berkan Scambiato Buchhaltungs-Manufaktur bietet spezialisierte Buchhaltungsleistungen für kleine und mittelständische Unternehmen. Alle vorbereitenden Tätigkeiten werden fachgerecht ausgeführt und anschließend von einem Steuerberater geprüft.</p>
+        <a href="#contact" class="cta-button" onclick="showSection('contact')">Kontaktieren Sie uns</a>
+    </section>
+
+    <!-- Über uns -->
+    <section id="about" class="content-section" style="display:none;">
+        <h2>Über die Berkan Scambiato Buchhaltungs-Manufaktur</h2>
+        <p>Als Buchhaltungsbüro bieten wir spezialisierte vorbereitende Dienstleistungen an, die zur abschließenden Kontrolle und rechtlichen Verantwortung an einen Steuerberater weitergegeben werden. Unser Ziel ist es, Unternehmen durch effiziente Buchhaltungsprozesse zu unterstützen und dabei Vertrauen und Zuverlässigkeit in den Vordergrund zu stellen.</p>
+    </section>
+
+    <!-- Dienstleistungen -->
+    <section id="services" class="content-section" style="display:none;">
+        <h2>Unsere Buchhaltungs-Dienstleistungen</h2>
+        <p>Wir bieten eine umfassende Palette an vorbereitenden Buchhaltungsdienstleistungen an, darunter die Organisation und Erfassung von Geschäftsvorfällen, die Erstellung von Buchungsunterlagen und vorbereitende Maßnahmen zur Steuererklärung, stets mit abschließender Prüfung durch einen Steuerberater.</p>
+    </section>
+
+    <!-- Partnerprogramm -->
+    <section id="partnership" class="content-section" style="display:none;">
+        <h2>Partnerprogramm für Steuerberater</h2>
+        <p>Wir suchen Steuerberater für eine vertrauensvolle Zusammenarbeit. Steuerberater, die an einer Partnerschaft interessiert sind, übernehmen die abschließende Prüfung und rechtliche Verantwortung für unsere vorbereitenden Tätigkeiten.</p>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact" class="content-section" style="display:none;">
+        <h2>Kontaktieren Sie uns</h2>
+        <form action="mailto:info.buchhaltungsmanufaktur@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Berkan Scambiato Buchhaltungs-Manufaktur - Alle Rechte vorbehalten</p>
+    </footer>
+</body>
+</html>
